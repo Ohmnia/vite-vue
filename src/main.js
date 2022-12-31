@@ -27,12 +27,12 @@ const javascriptLogoImg = document.querySelector('#javascriptLogo')
 const viteLogoImg = document.querySelector('#viteLogo')
 const appDiv = document.querySelector('#app')
 
-const startUp = setTimeout(async () => {
+const startUp = setTimeout(() => {
   javascriptLogoImg.setAttribute('class', 'jMove')
   viteLogoImg.setAttribute('class', 'vMove')
-  const endUp = setTimeout(async () =>{
+  const endUp = setTimeout(() =>{
     appDiv.setAttribute('class','moveUp')
-    const endIt = setTimeout(async ()=>{
+    const endIt = setTimeout(()=>{
       javascriptLogoImg.setAttribute('class', 'jEnd')
       viteLogoImg.setAttribute('class', 'vEnd')
     },1000);
