@@ -37,11 +37,47 @@ h1 {
   line-height: 1.1;
 }
 
-#app {
+#app{
+  left:calc(50% - 200px);
+  width:400px;
+}
+.app {
+  position: absolute;
+  top:100px;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: center;  
+}
+.moveUp{
+  position: absolute;
+  top:0px;
+  transition: all 2000ms ease-in-out;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; 
+}
+
+.vLogo{
+  position:absolute;
+  top:-120px;
+  left: 50%;
+  margin-left: -200px;
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.jLogo{
+  position:absolute;
+  top: -120px;
+  left: 50%;
+  margin-left: 40px;
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
 }
 
 .logo {
@@ -96,3 +132,56 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.move{
+  height: 2em;
+  padding: .5em;
+  will-change: filter;
+  position: absolute;
+  transition:  all 500ms ease-out;
+}
+
+.vMove{
+  position: absolute;
+  left: 50%;
+  margin-left: -120px;
+  top: 0px;
+  height: 2em;
+  padding: .5em;
+  will-change: filter;
+  transition:  all 500ms ease-out;
+}
+
+.jMove{
+  position: absolute;
+  left: 50%;
+  margin-left: 60px;
+  top: 0px;
+  height: 2em;
+  padding: .5em;
+  will-change: filter;
+  transition:  all 500ms ease-out;
+}
+
+.vEnd{
+  position: absolute;
+  left: 50%;
+  margin-left: -120px;
+  top: 10px;
+  height: 2em;
+  padding: .5em;
+  will-change: filter;
+  transition:  all 500ms ease-out;
+}
+
+.jEnd{
+  position: absolute;
+  left: 50%;
+  margin-left: 60px;
+  top: 10px;
+  height: 2em;
+  padding: .5em;
+  will-change: filter;
+  transition:  all 500ms ease-out;
+}
+
